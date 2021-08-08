@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS Styles link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Personal styles -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Smart Group - Tax Services</title>
+</head>
+
+
+
+
+<body class="bg-dark">
+
+
+    <!-- Static content of the page -->
+    <section id="header">
+        <div class="container ">
+            <div class="row text-center justify-content-around align-items-center">
+                <div class="col-2 p-0">
+                    <!--Menu button, visible on the page. Opens the canvas menu -->
+                    <a class="btn  btn-lg main-menu p-0" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <i class="bi bi-list d-md-none"></i>
+                        <p class="d-none d-md-inline text-light fs-1">Menu</p>
+                    </a>
+                </div>
+                <div class="col-7 p-0"><img src="./img/logo.jpg" alt=""></div>
+                <div class="col-3 translator p-0">
+                    <button class="btn p-0 translator" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                      <i class="bi bi-translate d-md-none"></i>
+                      <p class="d-none text-light d-md-inline fs-2">Translate</p>
+                      <p></p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="banner ">
+        <div class="container text-center">
+            <div class="row ">
+                <div class="col-12 p-0 mt-1"><img src="./img/background.jpg" alt="background" class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="welcomeMessage ">
+        <div class="container mt-3 border border-light bg-light">
+            <div class="row text-center">
+                <div class="col-12 col-lg-10 offset-lg-1"><h1 class="header mt-3 text-decoration-underline">Welcome!</h1></div>
+            </div>
+            <div class="row">
+                <div class="col-10 offset-1 text-center fs-3">  
+                    <p id="welcomeParagraph"> 
+                        We have been serving clients since 2001 helping them have the largest reimbursement possible 
+                        and pay as little as possible in taxes. We are also experts as well in tax planning, accounting
+                        bookkeeping, etc. <br>
+                        For more information check our services bellow.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services">
+        <div class="container mt-3 border border-light bg-light">
+            <div class="row text-center">
+                <div class="col-12"><h1 class="text-decoration-underline">Services</h1></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 text-center align-items-center p-5">  
+                    <!-- Dark Carousel Wrapper-->
+                    <div id="servicesCarousel" class="carousel  slide " data-bs-ride="carousel" data-bs-interval='false' >
+                       <div class="carousel-indicators">
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                         <button type="button" data-bs-target="#servicesCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                       
+                        </div>
+               
+               
+                       
+                       <div class="carousel-inner">
+                         <div class="carousel-item active">
+                           <img src="./img/income-tax.jpg" class="d-inline-block img-fluid" alt="Income Tax">
+                           <div class="rounded mt-6 carousel-caption bg-dark text-light  rounded">
+                             <h5>Income Tax</h5>
+                             <p class="d-none d-md-inline">Personal and for businesses</p>
+                             <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                           </div>
+                         </div>
+               
+               
+                         <div class="carousel-item ">
+                           <img src="./img/tax-id.jpg" class="d-block img-fluid" alt="Tax-ID">
+                           <div class="carousel-caption bg-dark text-light rounded">
+                             <h5>Tax ID </h5>
+                             <p class="d-none d-md-inline">We can help you process it</p>
+                             <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                           </div>
+                         </div>
+               
+               
+               
+                         <div class="carousel-item">
+                           <img src="./img/prepare.jpg" class="d-block w-100" alt="...">
+                           <div class="carousel-caption bg-dark text-light rounded">
+                             <h5>Tax preparation</h5>
+                             <p class="d-none d-md-inline">We can help you</p>
+                             <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                           </div>
+                         </div>
+               
+                         <div class="carousel-item">
+                           <img src="./img/book-keeping.jpg" class="d-block w-100" alt="...">
+                           <div class="carousel-caption bg-dark text-light rounded">
+                             <h5>Business Accounting</h5>
+                             <p class="d-none d-md-inline">Bookkeeping, payroll, sales, etc</p>
+                             <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                           </div>
+                         </div>
+               
+               
+                         <div class="carousel-item">
+                            <img src="./img/represent.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption bg-dark text-light rounded">
+                              <h5>IRS representation</h5>
+                              <p class="d-none d-md-inline">In trouble before the IRS</p>
+                              <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                            </div>
+                          </div>
+                          
+                          <div class="carousel-item">
+                            <img src="./img/company.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption bg-dark text-light rounded">
+                              <h5>We form companies </h5>
+                              <p class="d-none d-md-inline">DBA, LLC and corporations</p>
+                              <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="./img/license.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption bg-dark text-light rounded">
+                              <h5>Driving Licenses</h5>
+                              <p class="d-none d-md-inline">Get your international driving license</p>
+                              <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="./img/notarize.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption bg-dark text-light rounded">
+                              <h5>Notarization</h5>
+                              <p class="d-none d-md-inline">Of letters and contractors</p>
+                              <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item">
+                            <img src="./img/registration.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption bg-dark text-light rounded">
+                              <h5>Car Registration</h5>
+                              <p class="d-none d-md-inline">We can help you even if you don't have a CT license</p>
+                              <button class="btn btn-sm btn-outline-light d-md-none">Learn more</button>
+                            </div>
+                          </div>
+                
+                
+                
+                
+                
+                       </div>
+                       <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       </button>
+                       <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                       </button>
+                     </div></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footer">
+        <div class="container bg-dark text-light mt-1">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1>Contact Us!</h1>
+                    <h9><b>Our offices</b> </h2>
+                    <ul>
+                        <li class="mb-4">
+                            <i class="bi bi-geo-alt"></i> 
+                            964 Madison Av. Bridgeport CT. 06606 <br>
+                            Tel: 203-437-7919 <br>
+                            Tel: 203-252-7000
+                        </li>
+
+
+                        <li class="mb-4">
+                            <i class="bi bi-geo-alt"></i>
+                            447 Campbell Av. West Haven CT. 06516 <br>
+                            Tel: 203-672-6611 <br>
+                            Tel: 203-247-7920
+                        </li>
+
+
+                        <li>
+                            <i class="bi bi-geo-alt"></i>
+                            296 Grand Av. New Haven CT. 06513 <br>                              
+                            Tel: 203-247-8988 <br>
+                            Tel: 203-247-8512
+                        </li>
+                    </ul>
+                    <h9><b>Hours</b> </h2>
+                        <p>Monday to Friday: <br>
+                        9:00 AM - 8:00 PM </p>
+
+                        <p>Saturday: <br>
+                            8:00 AM - 6:00 PM </p>
+                        <p>Sunday: <br>
+                            9:00 AM - 2:00 PM </p>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    
+    <!-- Dynamic content -->
+     <!--What is inside the canvas menu-->
+
+     <div class="offcanvas offcanvas-start canvas-Main" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close btn-danger text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+
+        <div class="offcanvas-body">
+            
+            <ul class="main-sections">
+               <a href="#"><li class="fs-1">Home</li></a> 
+               <a href="#"></a> <li class="fs-1">About</li>
+               <a href="#"></a> <li class="fs-1">Services</li>
+            </ul>
+        
+        </div>
+    </div>
+
+
+    <!-- Inside the canvas translator menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Translate</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body language-selector">
+            <ul>
+                <li><button class="btn btn-primary mt-3">English</button></li>
+                <li><button class="btn btn-primary mt-3">Español</button></li>
+                <li><button class="btn btn-primary mt-3">Português</button></li>
+            </ul>
+        </div>
+    </div>
+
+
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
